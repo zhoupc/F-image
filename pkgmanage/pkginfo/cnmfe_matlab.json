@@ -1,0 +1,14 @@
+{
+  "name": "CNMF-E",
+  "version": "",
+  "description": "Constrained Nonnegative Matrix Factorization for microEndoscopic data",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhoupc/CNMF_E.git"
+  },
+  "author": {
+    "name": "Pengcheng Zhou", 
+    "email": "zhoupc2018@gmail.com"
+    }, 
+  "license": ""
+}

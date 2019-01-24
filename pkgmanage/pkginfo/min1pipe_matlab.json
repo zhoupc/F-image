@@ -1,0 +1,14 @@
+{
+  "name": "MIN1PIPE",
+  "version": "",
+  "description": "A MINiscope 1-photon-based Calcium Imaging Signal Extraction PIPEline",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JinghaoLu/MIN1PIPE.git"
+  },
+  "author": {
+    "name": "Jinghao Lu", 
+    "email": "min1pipe2018@gmail.com"
+    }, 
+  "license": ""
+}
