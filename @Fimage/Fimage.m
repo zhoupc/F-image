@@ -31,6 +31,12 @@ classdef Fimage < handle
         % load package 
         success = usepkg(obj, pkg_name)
         
+        % list package information 
+        installed = list_installed(obj); 
+        
+        % list supported information 
+        supported = list_supported(obj); 
+        
         % update package information 
         function update_pkginfo(obj, pkg_name)
             

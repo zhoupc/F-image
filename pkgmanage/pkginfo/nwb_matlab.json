@@ -1,0 +1,14 @@
+{
+  "name": "MatNWB",
+  "version": "",
+  "description": "A Matlab interface for reading and writing Neurodata Without Borders (NWB) files.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NeurodataWithoutBorders/matnwb.git"
+  },
+  "author": {
+    "name": "NeurodataWithoutBorders", 
+    "email": ""
+    }, 
+  "license": "BSD-2"
+}
