@@ -1,18 +1,18 @@
 {
-  "name": "CVX",
-  "version": "",
-  "description": "Constrained Nonnegative Matrix Factorization for microEndoscopic data",
+  "name": "The package name",
+  "version": "package version",
+  "description": "package description",
   "repository": {
-    "type": "zip",
-    "url": "http://cvxr.com/cvx/download/", 
-    "platform_dependent": true, 
-    "url_mac": "http://web.cvxr.com/cvx/cvx-maci64.zip", 
-    "url_unix": "http://web.cvxr.com/cvx/cvx-a64.zip",
-    "url_pc": "http://web.cvxr.com/cvx/cvx-w64.zip"
+    "type": "git/zip",
+    "url": "*.git link or *.zip link", 
+    "platform_dependent": false, 
+    "url_mac": "link for mac OS", 
+    "url_unix": "link for linux/unix system",
+    "url_pc": "link for windows PC"
   },
   "author": {
-    "name": "CVX Research, Inc.", 
+    "name": "who developed the package", 
     "email": ""
     }, 
-  "license": "GPL-3.0"
+  "license": "package license"
 }

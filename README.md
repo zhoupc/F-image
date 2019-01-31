@@ -85,7 +85,7 @@ fi.list_supported();
 |---|---|---|---|---|
 | CNMF-E  | cnmfe  | [Constrained Nonnegative Matrix Factorization for microEndoscopic data. 'E' also suggests 'extension'. It is built on top of CNMF with supports to 1 photon data.](https://github.com/zhoupc/CNMF_E)| Zhou, P., Resendez, S.L., Rodriguez-Romaguera, J., Jimenez, J.C., Neufeld, S.Q., Giovannucci, A., Friedrich, J., Pnevmatikakis, E.A., Stuber, G.D., Hen, R. and Kheirbek, M.A., 2018. Efficient and accurate extraction of in vivo calcium signals from microendoscopic video data. ELife, 7, p.e28728.|Pengcheng Zhou|
 |OASIS|oasis|[Fast online deconvolution of calcium imaging data](https://github.com/zhoupc/OASIS_matlab)|Friedrich, J., Zhou, P. and Paninski, L., 2017. Fast online deconvolution of calcium imaging data. PLoS computational biology, 13(3), p.e1005423.|Pengcheng Zhou|
-||||
+|YAMLmatlab|yaml|[Java-based implementation of YAML IO support in MATLAB](https://github.com/ewiger/yamlmatlab)||Pengcheng Zhou|
 
 ## Add a new package
 All you need to do is adding a json file **pkgname_matlab.json** to the folder **F-image/pkgname/pkginfo**. The package won't be installed until you run `fi.install(pkg_name)`. [Example json files](https://github.com/zhoupc/F-image/tree/master/pkgmanage/pkginfo). 
