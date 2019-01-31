@@ -1,7 +1,7 @@
 {
   "name": "CVX",
   "version": "",
-  "description": "Constrained Nonnegative Matrix Factorization for microEndoscopic data",
+  "description": "CVX: Matlab Software for Disciplined Convex Programming ",
   "repository": {
     "type": "zip",
     "url": "http://cvxr.com/cvx/download/", 

@@ -1,0 +1,18 @@
+{
+  "name": "ImagingDataLoader",
+  "version": "",
+  "description": "A unified MATLAB loader for all type of video imaging data (2D / 3D).",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhoupc/ImagingDataLoader.git", 
+    "platform_dependent": false, 
+    "url_mac": "", 
+    "url_unix": "",
+    "url_pc": ""
+  },
+  "author": {
+    "name": "Pengcheng Zhou", 
+    "email": "zhoupc2018@gmail.com"
+    }, 
+  "license": "GPL-3.0"
+}

@@ -42,7 +42,11 @@ for m=1:npkg
             tmp_path = installed.(pkg_name).path;
             evalin('base', sprintf('addpath(''%s'');', tmp_path));
             evalin('base', sprintf('addpath(genpath(''%s''));', ...
-                fullfile(tmp_path, 'utilities')));
+                fullfile(tmp_path, 'utilities')));        
+        case 'imagecn'
+            tmp_path = installed.(pkg_name).path;
+            evalin('base', sprintf('addpath(genpath(''%s''));', ...
+                fullfile(tmp_path, 'ImageCN')));
         case 'nwb'
             tmp_path = installed.(pkg_name).path;
             evalin('base', sprintf('addpath(''%s'');', tmp_path));

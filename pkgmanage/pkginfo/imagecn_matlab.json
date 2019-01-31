@@ -1,0 +1,18 @@
+{
+  "name": "ImageCN",
+  "version": "",
+  "description": "Convolutional neural networks (CNNs) and fluctuation method?based toolbox (ImageCN) for two-photon calcium imaging data processing",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZhangChenLab/ImageCN.git", 
+    "platform_dependent": false, 
+    "url_mac": "", 
+    "url_unix": "",
+    "url_pc": ""
+  },
+  "author": {
+    "name": "Chen Zhang", 
+    "email": ""
+    }, 
+  "license": ""
+}

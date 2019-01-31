@@ -8,7 +8,7 @@ if exist(installed_jsonpath, 'file')
     pkgs = fieldnames(installed); 
     for m=1:length(pkgs)
         pkg = eval(sprintf('installed.%s', pkgs{m})); 
-        fprintf('%s:\n\tpath:%s\n', pkg.name, pkg.path(length(obj.home_dir)+1:end));
+        fprintf('%s(%s):\n\tpath:%s\n', pkg.name, pkgs{m}, pkg.path(length(obj.home_dir)+1:end));
     end
 else
     fprintf('no packages were installed\n'); 
