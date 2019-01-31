@@ -4,7 +4,7 @@ F-image is a package management system used to install and manage software packa
 ## why F-image?
 There are many independently developed toolboxes for processing functional imaging data. Some functions can be reused by other packages. F-image can automatically install and load the selected packages for specific tasks. All the packages were maintained by F-image to save your time. 
 
-see example below 
+**Example**
 ```matlab 
 fi = Fimage(); 
 fi.install('cnmfe');   # install CNMF-E 
@@ -12,20 +12,21 @@ fi.usepkg('cnmfe');    # use CNMF-E functions in your code.
 ```
 
 ## Goals
-* **simplify** the step of installing and using packages for processing functional imaging data (mainly calcium/voltage imaging for now). 
+* **simplify** the step of installing and using packages of functional image analysis (mainly calcium/voltage imaging for now). 
   
 * **share** customized pipeline for processing one type of data. A complete pipeline usually calls multiple packages. It can simply tell F-image which packages to be installed and used. 
   
-* **reduce** the development effort by reusing other packages. All you need to do is running `fi.install(pkg_name); fi.usepkg(pkg_name)` 
-* **community** maintained toolboxes for reproducible researches. 
+* **reduce** the effort of developing your packages by reusing other packages. All you need to do is running `fi.install(pkg_name); fi.usepkg(pkg_name)` 
+* **community** curated toolboxes for reproducible researches. 
   
 ## Installation
 Open MATLAB and set the current working directly to the place you want to install F-image, then run the following command 
 ```matlab 
 try
-    system('git clone https://github.com/zhoupc/F-image.git .');
+    system('git clone https://github.com/zhoupc/F-image.git');
 catch
     unzip('https://github.com/zhoupc/F-image/archive/master.zip');
+    movefile('F-image-master', 'F-image')
 end
 cd F-image;
 fimage_setup; 
