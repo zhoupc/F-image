@@ -1,0 +1,20 @@
+{
+	"name": "Suite2P",
+	"version": "",
+	"description": "Suite2p: fast, accurate and complete two-photon pipeline",
+	"repository": {
+		"type": "git",
+		"url": "https:\/\/github.com\/cortex-lab\/Suite2P.git",
+		"platform_dependent": 0,
+		"url_mac": "",
+		"url_unix": "",
+		"url_pc": ""
+	},
+	"author": {
+		"name": "Marius Pachitariu",
+		"email": "pachitarium@janelia.hhmi.org"
+	},
+	"license": "",
+	"references": "Pachitariu, M., Stringer, C., Dipoppa, M., Schröder, S., Rossi, L.F., Dalgleish, H., Carandini, M. and Harris, K.D., 2017. Suite2p: beyond 10,000 neurons with standard two-photon microscopy. Biorxiv.",
+	"added_by": "Pengcheng Zhou"
+}

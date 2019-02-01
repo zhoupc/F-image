@@ -4,7 +4,11 @@
 	"description": "OASIS: Fast online deconvolution of calcium imaging data",
 	"repository": {
 		"type": "git",
-		"url": "https:\/\/github.com\/zhoupc\/OASIS_matlab.git"
+		"url": "https:\/\/github.com\/zhoupc\/OASIS_matlab.git",
+		"platform_dependent": 0,
+		"url_mac": "",
+		"url_unix": "",
+		"url_pc": ""
 	},
 	"author": {
 		"name": "Pengcheng Zhou",

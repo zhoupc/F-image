@@ -1,16 +1,20 @@
 {
 	"name": "CNMF-E",
-	"version": "",
+	"version": "1.0.0",
 	"description": "Constrained Nonnegative Matrix Factorization for microEndoscopic data",
 	"repository": {
 		"type": "git",
-		"url": "https:\/\/github.com\/zhoupc\/CNMF_E.git"
+		"url": "https:\/\/github.com\/zhoupc\/CNMF_E.git",
+		"platform_dependent": "false",
+		"url_mac": "",
+		"url_unix": "",
+		"url_pc": ""
 	},
 	"author": {
 		"name": "Pengcheng Zhou",
 		"email": "zhoupc2018@gmail.com"
 	},
-	"license": "",
+	"license": "GPL-3.0",
 	"references": "Zhou, P., Resendez, S.L., Rodriguez-Romaguera, J., Jimenez, J.C., Neufeld, S.Q., Giovannucci, A., Friedrich, J., Pnevmatikakis, E.A., Stuber, G.D., Hen, R. and Kheirbek, M.A., 2018. Efficient and accurate extraction of in vivo calcium signals from microendoscopic video data. ELife, 7, p.e28728.\t",
 	"added_by": "Pengcheng Zhou"
 }
