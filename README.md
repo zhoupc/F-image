@@ -6,7 +6,6 @@ There are many independently developed toolboxes for processing functional imagi
 
 **Example**
 ```matlab 
-fi = Fimage(); 
 fi.install('cnmfe');   # install CNMF-E 
 fi.usepkg('cnmfe');    # use CNMF-E functions in your code. 
 ```
@@ -85,10 +84,9 @@ Here we use [CNMF-E](https://github.com/zhoupc/CNMF_E) as an example to show how
 
 ## Supported packages 
 ```matlab
-fi = Fimage(); 
-fi.list_supported(); 
+>> fi.list_supported(); 
 ```
-[**currently supported packages** (01/19/2019)](https://github.com/zhoupc/F-image/blob/master/supported_packages.md)
+[**currently supported packages**](https://github.com/zhoupc/F-image/blob/master/supported_packages.md)
 
 ## Add a new package
 All you need to do is adding a json file **pkgname_matlab.json** (see [template.json](https://github.com/zhoupc/F-image/blob/master/pkgmanage/pkginfo/template.json))  to the folder **F-image/pkgname/pkginfo**. The package won't be installed until you run `fi.install(pkgname)`. Here are some [example json files](https://github.com/zhoupc/F-image/tree/master/pkgmanage/pkginfo). 

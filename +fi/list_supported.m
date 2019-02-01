@@ -13,6 +13,7 @@ end
 
 %% create a markdown file for listing all supported packages
 fp = fopen(fullfile(fi.home_dir, 'supported_packages.md'), 'w');
+fprintf(fp, '## supported packages [%s]\n', date()); 
 fprintf(fp, '|package name | short name| descriptions| references | added by|\n');
 fprintf(fp, '|---|---|---|---|---|\n');
 

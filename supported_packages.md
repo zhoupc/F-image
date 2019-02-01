@@ -1,3 +1,4 @@
+## supported packages [01-Feb-2019]
 |package name | short name| descriptions| references | added by|
 |---|---|---|---|---|
 |BLIT|blit|[A fast an well performing local image thresholding method](https://www.mathworks.com/matlabcentral/fileexchange/40854-bradley-local-image-thresholding)|Bradley, D. and Roth, G., 2007. Adaptive thresholding using the integral image. Journal of graphics tools, 12(2), pp.13-21.|Pengcheng Zhou|
