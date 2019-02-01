@@ -23,7 +23,7 @@ for m=1:npkg
     
     % add to path
     switch pkg_name
-            % adding the folder path directly
+        % adding the folder path directly
         case {'normcorre', 'segself', 'yaml', 'suite2p'}
             tmp_path = installed.(pkg_name).path;
             evalin('base', sprintf('addpath(''%s'');', tmp_path));
@@ -44,23 +44,21 @@ for m=1:npkg
             if ~exist(fullfile(tmp_path, 'namespaces'), 'dir')
                 generateCore('schema/core/nwb.namespace.yaml');
             end
-            
-            % run ***_setup.m
-        case 'cnmfe'
-            tmp_path = fullfile(installed.(pkg_name).path, 'cnmfe_setup.m');
-            evalin('base', sprintf('run(''%s'');', tmp_path));
-        case 'oasis'
-            tmp_path = fullfile(installed.(pkg_name).path, 'oasis_setup.m');
-            evalin('base', sprintf('run(''%s'');', tmp_path));
-        case 'cvx'
-            tmp_path = fullfile(installed.(pkg_name).path, 'cvx', 'cvx_setup.m');
-            evalin('base', sprintf('run(''%s'');', tmp_path));
         case {'blit'}
             tmp_path = fullfile(installed.(pkg_name).path, 'bradley');
             evalin('base', sprintf('addpath(''%s'');', tmp_path));
             % other cases
+            % run ***_setup.m
+        case {'cnmfe', 'oasis', 'cvx', 'monia'}
+            tmp_path = fullfile(installed.(pkg_name).path, sprintf('%s_setup.m', pkg_name));
+            evalin('base', sprintf('run(''%s'');', tmp_path));
+            
         otherwise
-            fprintf('the package is not supported yet\n');
+            fprintf('the package configuration has not customized yet. \nBy default, F-image only add its package main path.\n');
+            
+            tmp_path = installed.(pkg_name).path;
+            evalin('base', sprintf('addpath(''%s'');', tmp_path));
+            
     end
     fprintf('%s:\n\tloaded\n', installed.(pkg_name).name);
     
