@@ -17,9 +17,13 @@ fi.usepkg('cnmfe');    # use CNMF-E functions in your code.
  
 * **standardize** data communications between packages. A customized pipeline for processing data contains multiple steps, and we use F-image to ensure seamless communications. 
   
-* **share** customized pipeline for processing one type of data. Just tell what packages to be included and F-image will handle the rest. 
+* **share** customized pipelines for processing one type of data. You can just tell what packages to be included and F-image will handle the rest. 
   
-* **reduce** the effort of developing your packages by reusing other packages. All you need to do is running `fi.install(pkg_name); fi.usepkg(pkg_name)` 
+* **reduce** the effort of developing your packages by reusing other packages. All you need to do for calling functions in other packages is 
+  ```matlab
+  fi.install(pkg_name); 
+  fi.usepkg(pkg_name); 
+  ```
   
 ## Installation
 Open MATLAB and set the current working directly to the place you want to install F-image, then run the following command 
@@ -36,9 +40,15 @@ fimage_setup;
 
 ## How to use 
 Here we use [CNMF-E](https://github.com/zhoupc/CNMF_E) as an example to show how F-image manages packages. 
+
 ```matlab 
 >> pkg_name = 'cnmfe'; 
 ```
+
+* list all supported packages ([currently supported packages](https://github.com/zhoupc/F-image/blob/master/supported_packages.md))
+    ```matlab 
+    >> fi.list_supported(); 
+    ```
 * install a package 
     ```matlab 
     >> fi.install(pkg_name); 
@@ -76,10 +86,6 @@ Here we use [CNMF-E](https://github.com/zhoupc/CNMF_E) as an example to show how
     >> fi.list_installed(); 
     ```
 
-* list all supported packages ([currently supported packages](https://github.com/zhoupc/F-image/blob/master/supported_packages.md))
-    ```matlab 
-    >> fi.list_supported(); 
-    ```
 * show the path of F-image 
     ```matlab
     >> fi.home_dir(); 
