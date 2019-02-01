@@ -1,4 +1,4 @@
-function usepkg(obj, pkg_names)
+function usepkg(pkg_names)
 %% use packages
 if ischar(pkg_names)
     pkg_names = {pkg_names};
@@ -6,7 +6,7 @@ end
 npkg = length(pkg_names);
 
 % load the information of the installed packages
-installed_jsonpath = fullfile(obj.home_dir, 'pkgmanage', 'installed_matlab.json');
+installed_jsonpath = fullfile(fi.home_dir, 'pkgmanage', 'installed_matlab.json');
 if exist(installed_jsonpath, 'file')
     installed = loadjson(installed_jsonpath);
 else
@@ -17,7 +17,7 @@ for m=1:npkg
     pkg_name = lower(pkg_names{m});
     % check the installation of the package
     if ~isfield(installed, pkg_name)
-        obj.install(pkg_name);
+        fi.install(pkg_name);
         installed = loadjson(installed_jsonpath);
     end
     

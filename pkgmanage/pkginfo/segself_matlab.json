@@ -1,15 +1,17 @@
 {
-  "name": "SEG-SELF",
-  "version": "",
-  "description": "Region based method for segmenting and splitting images of cells in an unsupervised manner.",
-  "repository": {
-    "type": "zip",
-    "url": "https://www.mathworks.com/matlabcentral/fileexchange/67313-cell-segmentation-seg-self-method", 
-    "platform_dependent": false
-  },
-  "author": {
-    "name": "Costas Panagiotakis", 
-    "email": "costas.panagiotakis@gmail.com"
-    }, 
-  "license": ""
+	"name": "SEG-SELF",
+	"version": "",
+	"description": "Region based method for segmenting and splitting images of cells in an unsupervised manner.",
+	"repository": {
+		"type": "zip",
+		"url": "https:\/\/www.mathworks.com\/matlabcentral\/fileexchange\/67313-cell-segmentation-seg-self-method",
+		"platform_dependent": 0
+	},
+	"author": {
+		"name": "Costas Panagiotakis",
+		"email": "costas.panagiotakis@gmail.com"
+	},
+	"license": "",
+	"references": "Panagiotakis, C. and Argyros, A.A., 2018, October. Cell Segmentation Via Region-Based Ellipse Fitting. In 2018 25th IEEE International Conference on Image Processing (ICIP) (pp. 2426-2430). IEEE.",
+	"added_by": "Pengcheng Zhou"
 }

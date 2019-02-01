@@ -1,14 +1,16 @@
 {
-  "name": "MatNWB",
-  "version": "",
-  "description": "A Matlab interface for reading and writing Neurodata Without Borders (NWB) files.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/NeurodataWithoutBorders/matnwb.git"
-  },
-  "author": {
-    "name": "NeurodataWithoutBorders", 
-    "email": ""
-    }, 
-  "license": "BSD-2"
+	"name": "MatNWB",
+	"version": "",
+	"description": "A Matlab interface for reading and writing Neurodata Without Borders (NWB) files.",
+	"repository": {
+		"type": "git",
+		"url": "https:\/\/github.com\/NeurodataWithoutBorders\/matnwb.git"
+	},
+	"author": {
+		"name": "NeurodataWithoutBorders",
+		"email": ""
+	},
+	"license": "BSD-2",
+	"references": "Ruebel, O., Tritt, A., Dichter, B., Braun, T., Cain, N., Clack, N., Davidson, T.J., Dougherty, M., Fillion-Robin, J.C., Graddis, N. and Grauer, M., 2019. NWB: N 2.0: An Accessible Data Standard for Neurophysiology. bioRxiv, p.523035.",
+	"added_by": "Pengcheng Zhou"
 }

@@ -1,18 +1,20 @@
 {
-  "name": "YAMLmatlab",
-  "version": "",
-  "description": "Java-based implementation of YAML IO support in MATLAB.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ewiger/yamlmatlab.git", 
-    "platform_dependent": false, 
-    "url_mac": "", 
-    "url_unix": "",
-    "url_pc": ""
-  },
-  "author": {
-    "name": "Yauhen Yakimovich", 
-    "email": ""
-    }, 
-  "license": "MIT"
+	"name": "YAMLmatlab",
+	"version": "",
+	"description": "Java-based implementation of YAML IO support in MATLAB.",
+	"repository": {
+		"type": "git",
+		"url": "https:\/\/github.com\/ewiger\/yamlmatlab.git",
+		"platform_dependent": 0,
+		"url_mac": "",
+		"url_unix": "",
+		"url_pc": ""
+	},
+	"author": {
+		"name": "Yauhen Yakimovich",
+		"email": ""
+	},
+	"license": "MIT",
+	"references": "",
+	"added_by": "Pengcheng Zhou"
 }

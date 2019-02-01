@@ -1,14 +1,16 @@
 {
-  "name": "NoRMCorre",
-  "version": "",
-  "description": "This package provides a Matlab implementation of the NoRMCorre algorithm [1], and can be used for online piecewise rigid motion correction of 2d (planar) or 3d (volumetric) calcium imaging data.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/flatironinstitute/NoRMCorre.git"
-  },
-  "author": {
-    "name": "Eftychios A. Pnevmatikakis", 
-    "email": "epnevmatikakis@gmail.com"
-},
-    "license": "GPL-2.0"
+	"name": "NoRMCorre",
+	"version": "",
+	"description": "This package provides a Matlab implementation of the NoRMCorre algorithm [1], and can be used for online piecewise rigid motion correction of 2d (planar) or 3d (volumetric) calcium imaging data.",
+	"repository": {
+		"type": "git",
+		"url": "https:\/\/github.com\/flatironinstitute\/NoRMCorre.git"
+	},
+	"author": {
+		"name": "Eftychios A. Pnevmatikakis",
+		"email": "epnevmatikakis@gmail.com"
+	},
+	"license": "GPL-2.0",
+	"references": "Pnevmatikakis, E.A. and Giovannucci, A., 2017. NoRMCorre: An online algorithm for piecewise rigid motion correction of calcium imaging data. Journal of neuroscience methods, 291, pp.83-94.",
+	"added_by": "Pengcheng Zhou"
 }

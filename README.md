@@ -33,13 +33,7 @@ fimage_setup;
 ```
 
 ## How to use 
-The first step of using F-image is to create a class object by running 
-
-```matlab 
->> fi = Fimage(); 
-```
-
-Then you can do many things relating to the specific packages. Here we use [CNMF-E](https://github.com/zhoupc/CNMF_E) as an example. 
+Here we use [CNMF-E](https://github.com/zhoupc/CNMF_E) as an example to show how F-image manage packages. 
 ```matlab 
 >> pkg_name = 'cnmfe'; 
 ```
@@ -53,17 +47,20 @@ Then you can do many things relating to the specific packages. Here we use [CNMF
     ```
 * remove a package 
     ```matlab 
-    >> fi.remove(pkg_name)
+    >> fi.remove(pkg_name);
     ```
 * update a package 
     ```matlab
-    >> fi.update(pkg_name)
+    >> fi.update(pkg_name);
     ```
 * get the package path 
   ```matlab 
-  >> pkg_path = fi.locate(pkg_name)
+  >> pkg_path = fi.locate(pkg_name); 
   ```
-
+* show package information 
+    ```matlab
+    >> json_path = fi.pkginfo(pkg_name); 
+    ```
 * list all installed packages 
     ```matlab
     >> fi.list_installed(); 
@@ -79,13 +76,7 @@ Then you can do many things relating to the specific packages. Here we use [CNMF
 fi = Fimage(); 
 fi.list_supported(); 
 ```
-**currently supported packages** (01/19/2019)
-
-|package name   | short name  |description| reference|added by |
-|---|---|---|---|---|
-| CNMF-E  | cnmfe  | [Constrained Nonnegative Matrix Factorization for microEndoscopic data. 'E' also suggests 'extension'. It is built on top of CNMF with supports to 1 photon data.](https://github.com/zhoupc/CNMF_E)| Zhou, P., Resendez, S.L., Rodriguez-Romaguera, J., Jimenez, J.C., Neufeld, S.Q., Giovannucci, A., Friedrich, J., Pnevmatikakis, E.A., Stuber, G.D., Hen, R. and Kheirbek, M.A., 2018. Efficient and accurate extraction of in vivo calcium signals from microendoscopic video data. ELife, 7, p.e28728.|Pengcheng Zhou|
-|OASIS|oasis|[Fast online deconvolution of calcium imaging data](https://github.com/zhoupc/OASIS_matlab)|Friedrich, J., Zhou, P. and Paninski, L., 2017. Fast online deconvolution of calcium imaging data. PLoS computational biology, 13(3), p.e1005423.|Pengcheng Zhou|
-|YAMLmatlab|yaml|[Java-based implementation of YAML IO support in MATLAB](https://github.com/ewiger/yamlmatlab)||Pengcheng Zhou|
+[**currently supported packages** (01/19/2019)](https://github.com/zhoupc/F-image/blob/master/supported_packages.md)
 
 ## Add a new package
 All you need to do is adding a json file **pkgname_matlab.json** to the folder **F-image/pkgname/pkginfo**. The package won't be installed until you run `fi.install(pkg_name)`. [Example json files](https://github.com/zhoupc/F-image/tree/master/pkgmanage/pkginfo). 
@@ -108,7 +99,9 @@ Here is a template for writing json file
     "name": "who developed the package", 
     "email": ""
     }, 
-  "license": "package license"
+  "license": "package license",
+  "references": "package reference; use Harvard style; use ; to separate multiple references", 
+  "added_by": "your name"
 }
 ```
 There is an extra step for configuring the way of using package, which usually does the job of adding the package path to the MATLAB searching paths. You can do so by editing the file **usepkg.m**

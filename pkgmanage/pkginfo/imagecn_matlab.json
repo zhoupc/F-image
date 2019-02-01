@@ -1,18 +1,20 @@
 {
-  "name": "ImageCN",
-  "version": "",
-  "description": "Convolutional neural networks (CNNs) and fluctuation method?based toolbox (ImageCN) for two-photon calcium imaging data processing",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ZhangChenLab/ImageCN.git", 
-    "platform_dependent": false, 
-    "url_mac": "", 
-    "url_unix": "",
-    "url_pc": ""
-  },
-  "author": {
-    "name": "Chen Zhang", 
-    "email": ""
-    }, 
-  "license": ""
+	"name": "ImageCN",
+	"version": "",
+	"description": "Convolutional neural networks (CNNs) and fluctuation method?based toolbox (ImageCN) for two-photon calcium imaging data processing",
+	"repository": {
+		"type": "git",
+		"url": "https:\/\/github.com\/ZhangChenLab\/ImageCN.git",
+		"platform_dependent": 0,
+		"url_mac": "",
+		"url_unix": "",
+		"url_pc": ""
+	},
+	"author": {
+		"name": "Chen Zhang",
+		"email": ""
+	},
+	"license": "",
+	"references": "Wang, Y., Su, F., Wang, S., Yang, C., Tian, Y., Yuan, P., Liu, X., Xiong, W. and Zhang, C., 2019. Efficient Implementation of Convolutional Neural Networks in the Data Processing of Two-Photon In Vivo Imaging. Bioinformatics.",
+	"added_by": "Pengcheng Zhou"
 }

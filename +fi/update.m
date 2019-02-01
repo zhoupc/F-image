@@ -1,9 +1,9 @@
-function success = update(obj, pkg_name)
+function success = update(pkg_name)
 %% update packages
 
 pkg_name = lower(pkg_name);
 % find the corresponding json file
-json_file = fullfile(obj.home_dir, 'pkgmanage', 'pkginfo', ...
+json_file = fullfile(fi.home_dir, 'pkgmanage', 'pkginfo', ...
     [pkg_name, '_matlab.json']);
 if ~exist(json_file, 'file')
     fprintf('the package has not been supported yet\n');
@@ -12,7 +12,7 @@ if ~exist(json_file, 'file')
 end
 
 % load the information of the installed packages
-installed_jsonpath = fullfile(obj.home_dir, 'pkgmanage', 'installed_matlab.json');
+installed_jsonpath = fullfile(fi.home_dir, 'pkgmanage', 'installed_matlab.json');
 if exist(installed_jsonpath, 'file')
     installed = loadjson(installed_jsonpath);
 else
@@ -25,7 +25,7 @@ if isfield(installed, pkg_name)
     pkg = loadjson(json_file);
     switch lower(pkg.repository.type)
         case 'git'
-            tmp_path = fullfile(obj.home_dir, 'packages', pkg.name);
+            tmp_path = fullfile(fi.home_dir, 'packages', pkg.name);
             temp = cd();
             try
                 cd(tmp_path);   % switch to the package folder
@@ -33,7 +33,7 @@ if isfield(installed, pkg_name)
                 success = true;
                 installed.(pkg_name).date = date();
                 savejson('', installed, 'filename', installed_jsonpath);
-                fprintf('%s:\nupdated.\n\tpath:%s\n', pkg.name, tmp_path(length(obj.home_dir)+1:end));
+                fprintf('%s:\nupdated.\n\tpath:%s\n', pkg.name, tmp_path(length(fi.home_dir)+1:end));
             catch
                 success = false;
                 fprintf('%s:\n\tfailed to update.\n\tpath:%s\n', pkg.name, tmp_path);
@@ -42,20 +42,20 @@ if isfield(installed, pkg_name)
             cd(temp);       % switch back to the previous working directory
             % get the commit information
         case 'zip'
-            tmp_path = fullfile(obj.home_dir, 'packages', pkg.name);
+            tmp_path = fullfile(fi.home_dir, 'packages', pkg.name);
             % remove
-            obj.remove(pkg_name);
+            fi.remove(pkg_name);
             % install
-            obj.install(pkg_name);
+            fi.install(pkg_name);
             
-            fprintf('%s:\n\tupdated.\n\tpath:%s\n', pkg.name, tmp_path(length(obj.home_dir)+1:end));
+            fprintf('%s:\n\tupdated.\n\tpath:%s\n', pkg.name, tmp_path(length(fi.home_dir)+1:end));
         otherwise
             sprintf('the package is not supported yet.');
     end
 else
     fprintf('The package has not been installed yet. F-image will install it now.\n');
     try
-        obj.install(pkg_name);
+        fi.install(pkg_name);
         success = true;
     catch
         success = false;

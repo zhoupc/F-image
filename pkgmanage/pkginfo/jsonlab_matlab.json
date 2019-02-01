@@ -1,11 +1,13 @@
 {
-  "name": "jsonlab",
-  "version": "1.5.0",
-  "description": "An open-source MATLAB/Octave JSON encoder and decoder",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fangq/jsonlab.git"
-  },
-  "author": "Qianqian Fang <q.fang at neu.edu>",
-  "license": "GPL-3.0"
+	"name": "jsonlab",
+	"version": "1.5.0",
+	"description": "An open-source MATLAB\/Octave JSON encoder and decoder",
+	"repository": {
+		"type": "git",
+		"url": "https:\/\/github.com\/fangq\/jsonlab.git"
+	},
+	"author": "Qianqian Fang <q.fang at neu.edu>",
+	"license": "GPL-3.0",
+	"references": "",
+	"added_by": "Pengcheng Zhou"
 }

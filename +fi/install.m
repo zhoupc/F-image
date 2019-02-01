@@ -1,9 +1,8 @@
-function success = install(obj, pkg_name)
+function success = install(pkg_name)
 %% install packages
-
 pkg_name = lower(pkg_name);
 % find the corresponding json file
-json_file = fullfile(obj.home_dir, 'pkgmanage', 'pkginfo', ...
+json_file = fullfile(fi.home_dir, 'pkgmanage', 'pkginfo', ...
     [pkg_name, '_matlab.json']);
 if ~exist(json_file, 'file')
     fprintf('the package has not been supported yet\n');
@@ -12,12 +11,12 @@ if ~exist(json_file, 'file')
 end
 
 % load the information of the installed packages
-installed_jsonpath = fullfile(obj.home_dir, 'pkgmanage', 'installed_matlab.json');
+installed_jsonpath = fullfile(fi.home_dir, 'pkgmanage', 'installed_matlab.json');
 if exist(installed_jsonpath, 'file')
     installed = loadjson(installed_jsonpath);
     if isfield(installed, pkg_name)
         temp = installed.(pkg_name);
-        fprintf('%s:\n\tinstalled.\n\tpath:%s\n', temp.name, temp.path(length(obj.home_dir)+1:end));
+        fprintf('%s:\n\tinstalled.\n\tpath:%s\n', temp.name, temp.path(length(fi.home_dir)+1:end));
         success = true;
         return;
     end
@@ -29,7 +28,7 @@ end
 pkg = loadjson(json_file);
 switch lower(pkg.repository.type)
     case 'git'
-        tmp_path = fullfile(obj.home_dir, 'packages', pkg.name);
+        tmp_path = fullfile(fi.home_dir, 'packages', pkg.name);
         tmp_str = sprintf('git clone %s %s',...
             pkg.repository.url, tmp_path);
         if ~exist(tmp_path, 'dir')
@@ -42,10 +41,10 @@ switch lower(pkg.repository.type)
         pkg.date = date();
         eval(sprintf('installed.%s = pkg;', pkg_name));
         savejson('', installed, 'filename', installed_jsonpath);
-        fprintf('%s:\n\tinstalled.\n\tpath:%s\n', pkg.name, pkg.path(length(obj.home_dir)+1:end));
+        fprintf('%s:\n\tinstalled.\n\tpath:%s\n', pkg.name, pkg.path(length(fi.home_dir)+1:end));
         success = true;
     case 'zip'
-        tmp_path = fullfile(obj.home_dir, 'packages', pkg.name);
+        tmp_path = fullfile(fi.home_dir, 'packages', pkg.name);
         if ~exist(tmp_path, 'dir')
             % check whether the pakcage is platform dependent
             if pkg.repository.platform_dependent
@@ -85,7 +84,7 @@ switch lower(pkg.repository.type)
         pkg.date = date();
         eval(sprintf('installed.%s = pkg;', pkg_name));
         savejson('', installed, 'filename', installed_jsonpath);
-        fprintf('%s:\n\tinstalled.\n\tpath:%s\n', pkg.name, pkg.path(length(obj.home_dir)+1:end));
+        fprintf('%s:\n\tinstalled.\n\tpath:%s\n', pkg.name, pkg.path(length(fi.home_dir)+1:end));
         success = true;
     otherwise
         sprintf('the package is not supported yet.');

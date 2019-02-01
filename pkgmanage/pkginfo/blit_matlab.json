@@ -1,15 +1,17 @@
 {
-  "name": "BLIT",
-  "version": "",
-  "description": "A fast an well performing local image thresholding method",
-  "repository": {
-    "type": "zip",
-    "url": "https://www.mathworks.com/matlabcentral/fileexchange/40854-bradley-local-image-thresholding", 
-    "platform_dependent": false
-  },
-  "author": {
-    "name": "Jan Motl", 
-    "email": ""
-    }, 
-  "license": ""
+	"name": "BLIT",
+	"version": "",
+	"description": "A fast an well performing local image thresholding method",
+	"repository": {
+		"type": "zip",
+		"url": "https:\/\/www.mathworks.com\/matlabcentral\/fileexchange\/40854-bradley-local-image-thresholding",
+		"platform_dependent": 0
+	},
+	"author": {
+		"name": "Jan Motl",
+		"email": ""
+	},
+	"license": "",
+	"references": "Bradley, D. and Roth, G., 2007. Adaptive thresholding using the integral image. Journal of graphics tools, 12(2), pp.13-21.",
+	"added_by": "Pengcheng Zhou"
 }
