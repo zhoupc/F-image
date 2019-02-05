@@ -11,7 +11,7 @@ fi.usepkg('cnmfe');    # use CNMF-E functions in your code.
 ```
 
 ## Goals
-* **simplify** the step of installing and using packages of functional image analysis (mainly calcium/voltage imaging for now). 
+* **simplify** the steps of installing and using packages of functional image analysis (mainly calcium/voltage imaging for now). 
   
 * **community** curated list of functional imaging analysis toolboxes. 
  
@@ -97,23 +97,24 @@ Here we use [CNMF-E](https://github.com/zhoupc/CNMF_E) as an example to show how
 
 ## Add a new package
 You need two steps to add a package to F-image
-1. create a json file **pkgname_matlab.json** (see [template.json](https://github.com/zhoupc/F-image/blob/master/pkgmanage/pkginfo/template.json))  and saved it to the folder **F-image/pkgname/pkginfo**. F-image allows you to do so in the command window 
+1. create a json file **pkgname_matlab.json** (see [template.json](https://github.com/zhoupc/F-image/blob/master/pkgmanage/pkginfo/template.json))  and save it to the folder **F-image/pkgname/pkginfo**. You can also provide these info in the command window, 
     ```matlab
     >> fi.add_pkginfo(pkg_name); 
     ```
     Here are some [example json files](https://github.com/zhoupc/F-image/tree/master/pkgmanage/pkginfo). 
 
+    The package won't be installed until you run
 
-2. configure the way of using the package, which usually simply add the package path to the MATLAB searching paths. This only need to change the file **+fi/usepkg.m**, where you can find example configurations.  
+    ```matlab 
+    >> fi.install(pkg_name) 
+    ```
+
+
+2. configure the way of using the package, which usually simply add the package path to the MATLAB searching paths (default option). If you need some special configurations, modify the file **+fi/usepkg.m**, where you can find example configurations.  
     ```matlab 
     >> edit fi.usepkg   
     ```
 
-The package won't be installed until you run
-
-```matlab 
->> fi.install(pkg_name) 
-```
     
 ## Copyright 
 [Pengcheng Zhou](https://zhoupc.github.io) @Columbia University, 2019
