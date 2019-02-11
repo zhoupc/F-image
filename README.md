@@ -94,6 +94,10 @@ Here we use [CNMF-E](https://github.com/zhoupc/CNMF_E) as an example to show how
   ```matlab
   >> fi.push_github(); 
   ```
+* update F-image 
+    ```matlab
+    >> fi.selfupdate(); 
+    ```
 
 ## Add a new package
 You need two steps to add a package to F-image

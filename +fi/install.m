@@ -1,5 +1,19 @@
 function success = install(pkg_name)
 %% install packages
+
+%% if pkg_name is a list, then install them one by one 
+if iscell(pkg_name)
+    for m=1:length(pkg_name)
+       try 
+           fi.install(pkg_name{m}); 
+       catch 
+           error('%s: installation failed.\n', pkg_name{m}); 
+       end 
+    end
+    return; 
+end 
+
+%% install a single package 
 pkg_name = lower(pkg_name);
 % find the corresponding json file
 json_file = fullfile(fi.home_dir, 'pkgmanage', 'pkginfo', ...
