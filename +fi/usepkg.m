@@ -24,16 +24,20 @@ for m=1:npkg
     % add to path
     switch pkg_name
         % adding the folder path directly
-        case {'normcorre', 'segself', 'yaml', 'suite2p'}
+        case {'normcorre', 'segself', 'yaml', 'suite2p','export_fig', 'polygon2voxel'}
             tmp_path = installed.(pkg_name).path;
             evalin('base', sprintf('addpath(''%s'');', tmp_path));
             
             % adding the folder and some subdirectories
+        case 'utils'
+             tmp_path = installed.(pkg_name).path;
+            evalin('base', sprintf('addpath(''%s'');', tmp_path));
+            evalin('base', sprintf('addpath(genpath_exlude(''%s'', ''.git''));', ...
+                fullfile(tmp_path, 'utilities')));
         case 'min1pipe'
             tmp_path = installed.(pkg_name).path;
             evalin('base', sprintf('addpath(''%s'');', tmp_path));
-            evalin('base', sprintf('addpath(genpath(''%s''));', ...
-                fullfile(tmp_path, 'utilities')));
+            evalin('base', sprintf('addpath(genpath(''%s''));',tmp_path));
         case 'imagecn'
             tmp_path = installed.(pkg_name).path;
             evalin('base', sprintf('addpath(genpath(''%s''));', ...
@@ -49,12 +53,12 @@ for m=1:npkg
             evalin('base', sprintf('addpath(''%s'');', tmp_path));
             % other cases
             % run ***_setup.m
-        case {'cnmfe', 'oasis', 'cvx', 'monia'}
+        case {'cnmfe', 'oasis', 'cvx', 'monia', 'ease', 'idl'}
             tmp_path = fullfile(installed.(pkg_name).path, sprintf('%s_setup.m', pkg_name));
             evalin('base', sprintf('run(''%s'');', tmp_path));
             
         otherwise
-            fprintf('the package configuration has not customized yet. \nBy default, F-image only add its package main path.\n');
+            fprintf('the package configuration has not customized yet. \nBy default, F-image only add the package path to MATLAB searching path.\n');
             
             tmp_path = installed.(pkg_name).path;
             evalin('base', sprintf('addpath(''%s'');', tmp_path));

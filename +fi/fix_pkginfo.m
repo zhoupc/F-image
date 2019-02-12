@@ -2,7 +2,7 @@ function fix_pkginfo(pkg_name, only_fix_missing_values)
 %% install packages
 
 if ~exist('only_fix_missing_values', 'var')
-    only_fix_missing_values = true;
+    only_fix_missing_values = false;
 end
 
 %% load a template file

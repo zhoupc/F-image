@@ -87,5 +87,5 @@ switch lower(pkg.repository.type)
         fprintf('%s:\n\tinstalled.\n\tpath:%s\n', pkg.name, pkg.path(length(fi.home_dir)+1:end));
         success = true;
     otherwise
-        sprintf('the package is not supported yet.');
+        fprintf('the package is not supported yet.\n');
 end

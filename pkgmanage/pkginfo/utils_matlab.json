@@ -1,0 +1,20 @@
+{
+	"name": "matlab-utils",
+	"version": "",
+	"description": "a collection of MATLAB util functions.",
+	"repository": {
+		"type": "git",
+		"url": "https:\/\/github.com\/zhoupc\/matlab-utils.git",
+		"platform_dependent": 0,
+		"url_mac": "",
+		"url_unix": "",
+		"url_pc": ""
+	},
+	"author": {
+		"name": "Pengcheng Zhou ",
+		"email": "zhoupc2018@gmail.com"
+	},
+	"license": "",
+	"references": "",
+	"added_by": "Pengcheng Zhou"
+}

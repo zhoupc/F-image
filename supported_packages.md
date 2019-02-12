@@ -1,11 +1,10 @@
-## supported packages [11-Feb-2019]
+## supported packages [12-Feb-2019]
 |package name | short name| descriptions| references | added by|
 |---|---|---|---|---|
 |BLIT|blit|[A fast an well performing local image thresholding method](https://www.mathworks.com/matlabcentral/fileexchange/40854-bradley-local-image-thresholding)|Bradley, D. and Roth, G., 2007. Adaptive thresholding using the integral image. Journal of graphics tools, 12(2), pp.13-21.|Pengcheng Zhou|
 |CNMF-E|cnmfe|[Constrained Nonnegative Matrix Factorization for microEndoscopic data](https://github.com/zhoupc/CNMF_E.git)|Zhou, P., Resendez, S.L., Rodriguez-Romaguera, J., Jimenez, J.C., Neufeld, S.Q., Giovannucci, A., Friedrich, J., Pnevmatikakis, E.A., Stuber, G.D., Hen, R. and Kheirbek, M.A., 2018. Efficient and accurate extraction of in vivo calcium signals from microendoscopic video data. ELife, 7, p.e28728.	|Pengcheng Zhou|
 |CVX|cvx|[CVX: Matlab Software for Disciplined Convex Programming ](http://cvxr.com/cvx/download/)|Grant, M., Boyd, S. and Ye, Y., 2008. CVX: Matlab software for disciplined convex programming.|Pengcheng Zhou|
 |EASE|ease|[EASE is a toolbox for fusing calcium imaging data and densely reconstructed Electron Microscopy (EM) segments.](https://github.com/zhoupc/ease.git)||Pengcheng Zhou|
-|export_fig|export_fig|[A toolbox for exporting figures from MATLAB to standard image and document formats nicely.](https://github.com/altmany/export_fig.git)||Pengcheng Zhou|
 |ImagingDataLoader|idl|[A unified MATLAB loader for all type of video imaging data (2D / 3D).](https://github.com/zhoupc/ImagingDataLoader.git)||Pengcheng Zhou|
 |ImageCN|imagecn|[Convolutional neural networks (CNNs) and fluctuation method?based toolbox (ImageCN) for two-photon calcium imaging data processing](https://github.com/ZhangChenLab/ImageCN.git)|Wang, Y., Su, F., Wang, S., Yang, C., Tian, Y., Yuan, P., Liu, X., Xiong, W. and Zhang, C., 2019. Efficient Implementation of Convolutional Neural Networks in the Data Processing of Two-Photon In Vivo Imaging. Bioinformatics.|Pengcheng Zhou|
 |jsonlab|jsonlab|[An open-source MATLAB/Octave JSON encoder and decoder](https://github.com/fangq/jsonlab.git)||Pengcheng Zhou|
@@ -16,4 +15,5 @@
 |OASIS|oasis|[OASIS: Fast online deconvolution of calcium imaging data](https://github.com/zhoupc/OASIS_matlab.git)|Friedrich, J., Zhou, P. and Paninski, L., 2017. Fast online deconvolution of calcium imaging data. PLoS computational biology, 13(3), p.e1005423.|Pengcheng Zhou|
 |SEG-SELF|segself|[Region based method for segmenting and splitting images of cells in an unsupervised manner.](https://www.mathworks.com/matlabcentral/fileexchange/67313-cell-segmentation-seg-self-method)|Panagiotakis, C. and Argyros, A.A., 2018, October. Cell Segmentation Via Region-Based Ellipse Fitting. In 2018 25th IEEE International Conference on Image Processing (ICIP) (pp. 2426-2430). IEEE.|Pengcheng Zhou|
 |Suite2P|suite2p|[Suite2p: fast, accurate and complete two-photon pipeline](https://github.com/cortex-lab/Suite2P.git)|Pachitariu, M., Stringer, C., Dipoppa, M., Schr�der, S., Rossi, L.F., Dalgleish, H., Carandini, M. and Harris, K.D., 2017. Suite2p: beyond 10,000 neurons with standard two-photon microscopy. Biorxiv.|Pengcheng Zhou|
+|matlab-utils|utils|[a collection of MATLAB util functions.](https://github.com/zhoupc/matlab-utils.git)||Pengcheng Zhou|
 |YAMLmatlab|yaml|[Java-based implementation of YAML IO support in MATLAB.](https://github.com/ewiger/yamlmatlab.git)||Pengcheng Zhou|
