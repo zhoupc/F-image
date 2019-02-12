@@ -32,8 +32,7 @@ for m=1:npkg
         case 'utils'
              tmp_path = installed.(pkg_name).path;
             evalin('base', sprintf('addpath(''%s'');', tmp_path));
-            evalin('base', sprintf('addpath(genpath_exlude(''%s'', ''.git''));', ...
-                fullfile(tmp_path, 'utilities')));
+            evalin('base', sprintf('addpath(genpath_exclude(''%s'', ''.git''));',tmp_path));
         case 'min1pipe'
             tmp_path = installed.(pkg_name).path;
             evalin('base', sprintf('addpath(''%s'');', tmp_path));
