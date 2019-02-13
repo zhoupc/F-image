@@ -33,7 +33,7 @@ for m=1:npkg
     % add to path
     switch pkg_name
         % adding the folder path directly
-        case {'normcorre', 'segself', 'yaml', 'suite2p','export_fig', 'polygon2voxel'}
+        case {'normcorre', 'segself', 'yaml', 'suite2p','export_fig', 'polygon2voxel', 'm2html'}
             tmp_path = installed.(pkg_name).path;
             evalin('base', sprintf('addpath(''%s'');', tmp_path));
             
