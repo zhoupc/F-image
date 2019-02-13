@@ -13,6 +13,11 @@ else
     installed = struct();
 end
 
+try
+    fi_loaded = evalin('base', 'fi_loaded');
+catch
+    fi_loaded = struct();
+end
 for m=1:npkg
     pkg_name = lower(pkg_names{m});
     % check the installation of the package
@@ -21,6 +26,10 @@ for m=1:npkg
         installed = loadjson(installed_jsonpath);
     end
     
+    % check whether the package has been loaded
+    if isfield(fi_loaded, pkg_name) && fi_loaded.(pkg_name)
+        continue;
+    end
     % add to path
     switch pkg_name
         % adding the folder path directly
@@ -30,7 +39,7 @@ for m=1:npkg
             
             % adding the folder and some subdirectories
         case 'utils'
-             tmp_path = installed.(pkg_name).path;
+            tmp_path = installed.(pkg_name).path;
             evalin('base', sprintf('addpath(''%s'');', tmp_path));
             evalin('base', sprintf('addpath(genpath_exclude(''%s'', ''.git''));',tmp_path));
         case 'min1pipe'
@@ -63,6 +72,7 @@ for m=1:npkg
             evalin('base', sprintf('addpath(''%s'');', tmp_path));
             
     end
+    evalin('base', sprintf('fi_loaded.%s = true;', pkg_name));
     fprintf('%s:\n\tloaded\n', installed.(pkg_name).name);
     
 end
