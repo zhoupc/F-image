@@ -33,11 +33,15 @@ for m=1:npkg
     % add to path
     switch pkg_name
         % adding the folder path directly
-        case {'normcorre', 'segself', 'yaml', 'suite2p','export_fig', 'polygon2voxel', 'm2html'}
+        case {'normcorre', 'segself', 'yaml', 'suite2p','fast_ica',...
+                'export_fig', 'polygon2voxel', 'm2html', 'datajoint'}
             tmp_path = installed.(pkg_name).path;
             evalin('base', sprintf('addpath(''%s'');', tmp_path));
-            
             % adding the folder and some subdirectories
+        case 'fastica'
+            tmp_path = installed.(pkg_name).path;
+            evalin('base', sprintf('addpath(genpath(''%s''));',tmp_path));
+    
         case 'utils'
             tmp_path = installed.(pkg_name).path;
             evalin('base', sprintf('addpath(''%s'');', tmp_path));
@@ -63,6 +67,9 @@ for m=1:npkg
             % run ***_setup.m
         case {'cnmfe', 'oasis', 'cvx', 'monia', 'ease', 'idl'}
             tmp_path = fullfile(installed.(pkg_name).path, sprintf('%s_setup.m', pkg_name));
+            evalin('base', sprintf('run(''%s'');', tmp_path));
+        case {'vlfeat'}
+            tmp_path = fullfile(installed.(pkg_name).path, 'toolbox','vl_setup.m'); 
             evalin('base', sprintf('run(''%s'');', tmp_path));
             
         otherwise

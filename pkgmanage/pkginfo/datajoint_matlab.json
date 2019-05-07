@@ -1,0 +1,20 @@
+{
+	"name": "DataJoint",
+	"version": "3.2.1",
+	"description": "DataJoint for MATLAB is a high-level programming interface for relational databases designed to support data processing chains in science labs. DataJoint is built on the foundation of the relational data model and prescribes a consistent method for organizing, populating, and querying data.",
+	"repository": {
+		"type": "git",
+		"url": "https:\/\/github.com\/datajoint\/datajoint-matlab.git",
+		"platform_dependent": 0,
+		"url_mac": "",
+		"url_unix": "",
+		"url_pc": ""
+	},
+	"author": {
+		"name": "Dimitri Yatsenko ",
+		"email": ""
+	},
+	"license": "MIT",
+	"references": "Yatsenko, D., Reimer, J., Ecker, A.S., Walker, E.Y., Sinz, F., Berens, P., Hoenselaar, A., Cotton, R.J., Siapas, A.S. and Tolias, A.S., 2015. DataJoint: managing big scientific data using MATLAB or Python. BioRxiv, p.031658.",
+	"added_by": "Pengcheng Zhou "
+}

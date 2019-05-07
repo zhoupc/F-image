@@ -1,0 +1,20 @@
+{
+	"name": "FastICA",
+	"version": "2.5",
+	"description": "The FastICA package is a free (GPL) MATLAB program that implements the fast fixed-point algorithm for independent component analysis and projection pursuit. It features an easy-to-use graphical user interface, and a computationally powerful algorithm.",
+	"repository": {
+		"type": "zip",
+		"url": "https:\/\/research.ics.aalto.fi\/ica\/fastica\/code\/FastICA_2.5.zip",
+		"platform_dependent": 0,
+		"url_mac": "",
+		"url_unix": "",
+		"url_pc": ""
+	},
+	"author": {
+		"name": "",
+		"email": ""
+	},
+	"license": "GPL",
+	"references": "",
+	"added_by": "Pengcheng Zhou"
+}
