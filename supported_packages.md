@@ -1,4 +1,4 @@
-## supported packages [06-May-2019]
+## supported packages [01-Jul-2019]
 |package name | short name| descriptions| references | added by|
 |---|---|---|---|---|
 |BLIT|blit|[A fast an well performing local image thresholding method](https://www.mathworks.com/matlabcentral/fileexchange/40854-bradley-local-image-thresholding)|Bradley, D. and Roth, G., 2007. Adaptive thresholding using the integral image. Journal of graphics tools, 12(2), pp.13-21.|Pengcheng Zhou|
@@ -15,6 +15,7 @@
 |NoRMCorre|normcorre|[This package provides a Matlab implementation of the NoRMCorre algorithm [1], and can be used for online piecewise rigid motion correction of 2d (planar) or 3d (volumetric) calcium imaging data.](https://github.com/flatironinstitute/NoRMCorre.git)|Pnevmatikakis, E.A. and Giovannucci, A., 2017. NoRMCorre: An online algorithm for piecewise rigid motion correction of calcium imaging data. Journal of neuroscience methods, 291, pp.83-94.|Pengcheng Zhou|
 |MatNWB|nwb|[A Matlab interface for reading and writing Neurodata Without Borders (NWB) files.](https://github.com/NeurodataWithoutBorders/matnwb.git)|Ruebel, O., Tritt, A., Dichter, B., Braun, T., Cain, N., Clack, N., Davidson, T.J., Dougherty, M., Fillion-Robin, J.C., Graddis, N. and Grauer, M., 2019. NWB: N 2.0: An Accessible Data Standard for Neurophysiology. bioRxiv, p.523035.|Pengcheng Zhou|
 |OASIS|oasis|[OASIS: Fast online deconvolution of calcium imaging data](https://github.com/zhoupc/OASIS_matlab.git)|Friedrich, J., Zhou, P. and Paninski, L., 2017. Fast online deconvolution of calcium imaging data. PLoS computational biology, 13(3), p.e1005423.|Pengcheng Zhou|
+|parseParameters|parser|[parase parameters](https://github.com/mirumirai/parseParameters.git)||Pengcheng Zhou|
 |SEG-SELF|segself|[Region based method for segmenting and splitting images of cells in an unsupervised manner.](https://www.mathworks.com/matlabcentral/fileexchange/67313-cell-segmentation-seg-self-method)|Panagiotakis, C. and Argyros, A.A., 2018, October. Cell Segmentation Via Region-Based Ellipse Fitting. In 2018 25th IEEE International Conference on Image Processing (ICIP) (pp. 2426-2430). IEEE.|Pengcheng Zhou|
 |Suite2P|suite2p|[Suite2p: fast, accurate and complete two-photon pipeline](https://github.com/cortex-lab/Suite2P.git)|Pachitariu, M., Stringer, C., Dipoppa, M., Schr�der, S., Rossi, L.F., Dalgleish, H., Carandini, M. and Harris, K.D., 2017. Suite2p: beyond 10,000 neurons with standard two-photon microscopy. Biorxiv.|Pengcheng Zhou|
 |matlab-utils|utils|[a collection of MATLAB util functions.](https://github.com/zhoupc/matlab-utils.git)||Pengcheng Zhou|
