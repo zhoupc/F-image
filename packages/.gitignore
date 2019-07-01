@@ -1,5 +1,5 @@
 * 
-!parseParameters
-!jsonlab/*/
+!parseParameters/
+!jsonlab/
 !.gitignore
 
