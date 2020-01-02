@@ -1,11 +1,11 @@
 {
-	"name": "monia",
-	"version": "0.0.0",
-	"description": "Modules for Neuronal Imaging Analysis",
+	"name": "nid",
+	"version": "",
+	"description": "neuronal image denoiser",
 	"repository": {
 		"type": "git",
-		"url": "https:\/\/github.com\/zhoupc\/monia.git",
-		"platform_dependent": 0,
+		"url": "https:\/\/github.com\/zhoupc\/NID.git",
+		"platform_dependent": null,
 		"url_mac": "",
 		"url_unix": "",
 		"url_pc": ""
@@ -16,5 +16,5 @@
 	},
 	"license": "GPL-3.0",
 	"references": "",
-	"added_by": "Pengcheng Zhou"
+	"added_by": "Pengcheng Zhou "
 }

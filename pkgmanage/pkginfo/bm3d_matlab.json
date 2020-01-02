@@ -1,0 +1,20 @@
+{
+	"name": "BM3D",
+	"version": "v2.0",
+	"description": "Image and video denoising by sparse 3D transform-domain collaborative filtering",
+	"repository": {
+		"type": "git",
+		"url": "https:\/\/github.com\/zhoupc\/BM3D.git",
+		"platform_dependent": null,
+		"url_mac": "",
+		"url_unix": "",
+		"url_pc": ""
+	},
+	"author": {
+		"name": "Kostadin Dabov; Aram Danieyan; Alessandro Foi",
+		"email": ""
+	},
+	"license": "TUT limited license http:\/\/www.cs.tut.fi\/~foi\/GCF-BM3D\/legal_notice.html",
+	"references": "",
+	"added_by": "Pengcheng Zhou"
+}

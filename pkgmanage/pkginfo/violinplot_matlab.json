@@ -1,0 +1,20 @@
+{
+	"name": "violin_plots",
+	"version": "",
+	"description": "a violin plot is an easy to read substitute for a box plot that replaces the box shape with a kernel density estimate of the data. ",
+	"repository": {
+		"type": "git",
+		"url": "https:\/\/github.com\/bastibe\/Violinplot-Matlab.git",
+		"platform_dependent": null,
+		"url_mac": "",
+		"url_unix": "",
+		"url_pc": ""
+	},
+	"author": {
+		"name": "Bastian Bechtold",
+		"email": ""
+	},
+	"license": "",
+	"references": "",
+	"added_by": "Pengcheng Zhou"
+}
