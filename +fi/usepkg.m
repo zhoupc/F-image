@@ -71,7 +71,9 @@ for m=1:npkg
         case {'vlfeat'}
             tmp_path = fullfile(installed.(pkg_name).path, 'toolbox','vl_setup.m'); 
             evalin('base', sprintf('run(''%s'');', tmp_path));
-            
+        case {'nid'}
+            tmp_path = fullfile(installed.(pkg_name).path, 'matlab');
+            evalin('base', sprintf('addpath(''%s'');', tmp_path));
         otherwise
             fprintf('the package configuration has not customized yet. \nBy default, F-image only add the package path to MATLAB searching path.\n');
             
