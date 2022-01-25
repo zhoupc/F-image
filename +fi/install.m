@@ -55,7 +55,7 @@ switch lower(pkg.repository.type)
         pkg.date = date();
         eval(sprintf('installed.%s = pkg;', pkg_name));
         savejson('', installed, 'filename', installed_jsonpath);
-        fprintf('%s:\n\tinstalled.\n\tpath:%s\n', pkg.name, pkg.path(length(fi.home_dir)+1:end));
+        fprintf('%s:\n\tinstalled.\n\tpath:%s\n', pkg.name, pkg.path(length(fi.home_dir)+2:end));
         success = true;
     case 'zip'
         tmp_path = fullfile(fi.home_dir, 'packages', pkg.name);
